@@ -162,7 +162,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to solarahspeaks.info →
+          Go to solarahspeaks.info to view services→
         </a>
       </footer>
     </div>
