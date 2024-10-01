@@ -2,20 +2,33 @@ import Image from 'next/image';
 import localFont from 'next/font/local';
 import GhostContentAPI from '@tryghost/content-api';
 // import { getPosts } from '../lib/posts';
+import { ThirdwebProvider } from 'thirdweb/react';
 
+export async function Main() {
+  return (
+    <ThirdwebProvider>
+      <App />
+    </ThirdwebProvider>
+  );
+}
 // Create API instance with site credentials
 const api = new GhostContentAPI({
-  url: 'https://benitos-blog.ghost.io',
-  key: '22444f78447824223cefc48062',
+  url: 'https://solarah-speaks.ghost.io',
+  key: 'f10c2c09d9fd357d5244a19c5c',
   version: 'v5.0',
 });
-// const IndexPage = (props) => (
-//   <ul>
-//     {props.posts.map(post => (
-//       <li key={post.id}>{post.title}</li>
-//     ))}
-//   </ul>
-// );
+
+const IndexPage = (props) => (
+  <ul>
+    {props.posts.map((post) => (
+      <li key={post.id}>
+        <Link href={`/${post.slug}`}>
+          <a>{post.title}</a>
+        </Link>
+      </li>
+    ))}
+  </ul>
+);
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
   variable: '--font-geist-sans',
@@ -27,10 +40,33 @@ const geistMono = localFont({
   weight: '100 900',
 });
 
-export async function getPosts() {
-  return await api.posts
-    .browse({
-      limit: 'all',
+// const posts = await getPosts();
+
+// posts.map(post => {
+//   const options = {
+//     year: 'numeric',
+//     month: 'short',
+//     day: 'numeric'
+//   };
+
+//   post.dateFormatted = new Intl.DateTimeFormat('en-US', options)
+//     .format(new Date(post.published_at));
+// });
+// export async function getPosts() {
+//   return await api.posts
+//     .browse({
+//       include: 'tags,authors',
+//       limit: 'all',
+//     })
+//     .catch((err) => {
+//       console.error(err);
+//     });
+// }
+
+export async function getAuthor(authorSlug) {
+  return await api.authors
+    .read({
+      slug: authorSlug,
     })
     .catch((err) => {
       console.error(err);
