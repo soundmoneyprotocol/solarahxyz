@@ -18,17 +18,17 @@ const api = new GhostContentAPI({
   version: 'v5.0',
 });
 
-const IndexPage = (props) => (
-  <ul>
-    {props.posts.map((post) => (
-      <li key={post.id}>
-        <Link href={`/${post.slug}`}>
-          <a>{post.title}</a>
-        </Link>
-      </li>
-    ))}
-  </ul>
-);
+// const IndexPage = (props) => (
+//   <ul>
+//     {props.posts.map((post) => (
+//       <li key={post.id}>
+//         <Link href={`/${post.slug}`}>
+//           <a>{post.title}</a>
+//         </Link>
+//       </li>
+//     ))}
+//   </ul>
+// );
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
   variable: '--font-geist-sans',
@@ -63,15 +63,15 @@ const geistMono = localFont({
 //     });
 // }
 
-export async function getAuthor(authorSlug) {
-  return await api.authors
-    .read({
-      slug: authorSlug,
-    })
-    .catch((err) => {
-      console.error(err);
-    });
-}
+// export async function getAuthor(authorSlug) {
+//   return await api.authors
+//     .read({
+//       slug: authorSlug,
+//     })
+//     .catch((err) => {
+//       console.error(err);
+//     });
+// }
 export default function Home() {
   return (
     <div
