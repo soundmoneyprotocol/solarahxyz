@@ -161,13 +161,19 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
+            src="/logos/Solarah_Blue.jpeg"
             alt="Globe icon"
             width={16}
             height={16}
           />
           Go to solarahspeaks.info to view services→
         </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://solarah.info/"
+          target="_blank"
+          rel="noopener noreferrer"
+        ></a>
       </footer>
     </div>
   );
