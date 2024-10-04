@@ -89,7 +89,7 @@ export default function Home() {
             Solarah Speaks Tarot-astrology Coming Soon...🔮{' '}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold"></code>
           </li>
-          <li>Solarah's Substack is Migrating to Ghost.📓</li>
+          <li>Solarah's Substack is Migrating to Ghost📓</li>
           <li>
             The new earth paradigm will not be live streamed... it will be
             channeled ✨🌚
