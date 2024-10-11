@@ -17,7 +17,27 @@ const api = new GhostContentAPI({
   key: 'f10c2c09d9fd357d5244a19c5c',
   version: 'v5.0',
 });
+//import template.html for BTCPay/Blockn
+// function MyComponent() {
+// const response = await fetch('/template.html');
+// useEffect(() => {
+//   async function fetchHtml() {
+//     try {
+//       const response = await fetch('index.html');
+//       const html = await response.text();
+//       setHtmlContent(html);
+//     } catch (error) {
+//       console.error('Error fetching HTML file:', error);
+//     }
+//   }
 
+//   fetchHtml();
+// }, []);
+
+// return (
+//   <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+// );
+// }
 // const IndexPage = (props) => (
 //   <ul>
 //     {props.posts.map((post) => (
@@ -86,20 +106,49 @@ export default function Home() {
         />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
-            Solarah Speaks Tarot-astrology Coming Soon...🔮{' '}
+            Solarah's Substack is Migrating to Ghost👉 blog.solarah.xyz 📓{' '}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold"></code>
           </li>
-          <li>Solarah's Substack is Migrating to Ghost📓</li>
+          <li>Solarah Speaks Tarot-astrology Reports Coming Soon...2025 🔮</li>
           <li>
-            The new earth paradigm will not be live streamed... it will be
+            The new earth platform will not be live streamed... it will be
             channeled ✨🌚
+          </li>
+          <li>
+            If you want to Subscribe to Solarah Speaks, please
+            <a
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+              src=""
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+            <a
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+              href="https://blog.solarah.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                aria-hidden
+                src="/logos/Solarah_Blue.jpeg"
+                alt="Globe icon"
+                width={16}
+                height={16}
+              />
+              Click Logo to view blog→ solarah.xyz
+            </a>
+          </li>
+          <li>
+            If you want to book a session, please visit solarah.info 👉 then
+            email solarahspeaks@proton.me to confirm before you book a session
+            with the button below 👇🏽{' '}
           </li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://pay.solarah.xyz/"
+            href="https://blog.solarah.xyz/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -110,22 +159,22 @@ export default function Home() {
               width={20}
               height={20}
             />
-            Donate now
+            Subscribe now
           </a>
           <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://www.paypal.com/paypalme/tanyatarot19"
+            href="https://pay.solarah.xyz/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Renew Subscription
+            Book a Session
           </a>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://pay.solarah.xyz/"
+          href="https://www.paypal.com/paypalme/tanyatarot19"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -136,7 +185,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Book a Session
+          Donate to Liberation
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -151,11 +200,34 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Community
+          Join Community
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          src="https://www.youtube.com/channel/UCYLsAm9BC45uZ5_lb1YenVw"
+          href="https://www.youtube.com/channel/UCYLsAm9BC45uZ5_lb1YenVw"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="https://nextjs.org/icons/window.svg"
+            alt="Window icon"
+            width={16}
+            height={16}
+          />
+          YouTube Channel
+        </a>
+
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          src=""
+          target="_blank"
+          rel="noopener noreferrer"
+        ></a>
+
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://solarah.info/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -166,14 +238,8 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to solarah.info to view services→
+          Click Logo to view services→ solarah.info
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://solarah.info/"
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a>
       </footer>
     </div>
   );
