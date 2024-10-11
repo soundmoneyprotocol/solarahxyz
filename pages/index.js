@@ -127,13 +127,14 @@ export default function Home() {
                 width={16}
                 height={16}
               />
-              Click Logo to visit blog.solarah.xyz
+              Click Link to visit blog.solarah.xyz
             </a>
           </li>
-          <li>Solarah Speaks Tarot-astrology Reports Coming Soon...2025 🔮</li>
+
           <li>
             The new earth platform will not be live streamed... it will be
-            channeled ✨🌚
+            channeled ✨🌚 Solarah Speaks Tarot-astrology Web3 Reports Coming
+            Soon...2025 🔮
           </li>
 
           <li>
