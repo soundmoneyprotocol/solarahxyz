@@ -105,17 +105,9 @@ export default function Home() {
           height={38}
         />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Solarah's Substack is Migrating to Ghost👉 blog.solarah.xyz 📓{' '}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold"></code>
-          </li>
-          <li>Solarah Speaks Tarot-astrology Reports Coming Soon...2025 🔮</li>
           <li>
-            The new earth platform will not be live streamed... it will be
-            channeled ✨🌚
-          </li>
-          <li>
-            If you want to Subscribe to Solarah Speaks, please
+            Solarah's Substack is Migrating to Ghost👉 📓 If you want to
+            Subscribe to Solarah Speaks, please
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
               src=""
@@ -135,9 +127,15 @@ export default function Home() {
                 width={16}
                 height={16}
               />
-              Click Logo to view blog→ solarah.xyz
+              Click Logo to visit blog.solarah.xyz
             </a>
           </li>
+          <li>Solarah Speaks Tarot-astrology Reports Coming Soon...2025 🔮</li>
+          <li>
+            The new earth platform will not be live streamed... it will be
+            channeled ✨🌚
+          </li>
+
           <li>
             If you want to book a session, please visit solarah.info 👉 then
             email solarahspeaks@proton.me to confirm before you book a session
