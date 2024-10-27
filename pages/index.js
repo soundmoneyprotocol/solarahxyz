@@ -138,7 +138,7 @@ export default function Home() {
           </li>
 
           <li>
-            If you want to book a session, please choose a service by visiting{' '}
+            If you want to book a session, please choose a service by visiting
             READINGS DEVINE ALIGNMENT READINGS These are general readings based
             on what you need to know to come into alignment with what you desire
             to accomplish divinely. All readings are approximately 60 minutes in
@@ -146,18 +146,12 @@ export default function Home() {
             Turnaround time is 5-7 days. Please read the note at the end of this
             page that is in capital letters, so you don't forfeit your chance of
             working with me now or in the future. EMAIL THROUGH THE CONTACT PAGE
-            OR solarahspeaks@proton.me TO BOOK
-            SOUL RECOVERY SESSION (60 Minutes) £133.00
-            1:1 client led video sessions for mentorship and guidance. 
-            I utilise the full scope of my expertise in alkhemy, tarot, 
-            family energy systems, spiritual warfare, herbalism, 
-            and holistic health.
-            SOUL RECOVERY SESSION (90 MINUTES) £199.00
-
-
-
-All sessions are conducted via video call. 
-
+            OR solarahspeaks@proton.me TO BOOK SOUL RECOVERY SESSION (60
+            Minutes) £133.00 1:1 client led video sessions for mentorship and
+            guidance. I utilise the full scope of my expertise in alkhemy,
+            tarot, family energy systems, spiritual warfare, herbalism, and
+            holistic health. SOUL RECOVERY SESSION (90 MINUTES) £199.00 All
+            sessions are conducted via video call.{' '}
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
               src=""
