@@ -106,8 +106,8 @@ export default function Home() {
         />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li>
-            Solarah's Substack is Migrating to Ghost👉 📓 If you want to
-            Subscribe to Solarah Speaks, please
+            Solarah's Substack has Migrating to Ghost👉📓 If you want to
+            Subscribe to Solarah Speaks, please 👇🏽
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
               src=""
@@ -132,26 +132,14 @@ export default function Home() {
           </li>
 
           <li>
-            The new earth platform will not be live streamed... it will be
-            channeled ✨🌚 Solarah Speaks Tarot-astrology Web3 Reports Coming
-            Soon...2025 🔮
+            Building The Solarah Foundation: A Decentralized Neurodivergent
+            Community Template for a new earth platform 🌎 Global Initiative
+            Project: SolarahDAO 🌱 nodes for new earth The new earth platform
+            will not be live streamed... it will be channeled ✨🌚🔮
           </li>
 
           <li>
-            If you want to book a session, please choose a service by visiting
-            READINGS DEVINE ALIGNMENT READINGS These are general readings based
-            on what you need to know to come into alignment with what you desire
-            to accomplish divinely. All readings are approximately 60 minutes in
-            length, and delivered by attachment or link to your inbox.
-            Turnaround time is 5-7 days. Please read the note at the end of this
-            page that is in capital letters, so you don't forfeit your chance of
-            working with me now or in the future. EMAIL THROUGH THE CONTACT PAGE
-            OR solarahspeaks@proton.me TO BOOK SOUL RECOVERY SESSION (60
-            Minutes) £133.00 1:1 client led video sessions for mentorship and
-            guidance. I utilise the full scope of my expertise in alkhemy,
-            tarot, family energy systems, spiritual warfare, herbalism, and
-            holistic health. SOUL RECOVERY SESSION (90 MINUTES) £199.00 All
-            sessions are conducted via video call.{' '}
+            If you want to book a session, please choose a service by visiting{' '}
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
               src=""
@@ -160,7 +148,7 @@ export default function Home() {
             ></a>
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://solarah.info/"
+              href="https://blog.solarah.xyz/services/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -171,7 +159,7 @@ export default function Home() {
                 width={16}
                 height={16}
               />
-              solarah.info
+              blog.solarah.xyz/services
             </a>{' '}
             👉 then email solarahspeaks@proton.me to confirm before you book a
             session with the button below 👇🏽{' '}
