@@ -106,8 +106,7 @@ export default function Home() {
         />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li>
-            Solarah's Substack has Migrating to Ghost👉📓 If you want to
-            Subscribe to Solarah Speaks, please 👇🏽
+            Subscribe to Solarah Speaks👇🏽
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
               src=""
@@ -206,7 +205,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Donate to Liberation
+          Support
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -259,7 +258,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Click Logo to view services→ solarah.info
+          Click Logo to view services→ blog.solarah.xyz/services
         </a>
       </footer>
     </div>
