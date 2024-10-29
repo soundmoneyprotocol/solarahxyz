@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@livepeer/react": "^4.2.7",
     "@tryghost/content-api": "^1.11.21",
     "ghost-cli": "^1.26.1",
     "next": "14.2.8",
