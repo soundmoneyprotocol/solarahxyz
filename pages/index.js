@@ -1,5 +1,11 @@
 import Image from 'next/image';
 import localFont from 'next/font/local';
+import Script from 'next/script';
+import React from 'react';
+import { useEffect } from 'react';
+
+import Head from 'next/head';
+import GhostEmbed from '../components/ghost_embed';
 import GhostContentAPI from '@tryghost/content-api';
 // import { getPosts } from '../lib/posts';
 import { ThirdwebProvider } from 'thirdweb/react';
@@ -92,175 +98,37 @@ const geistMono = localFont({
 //       console.error(err);
 //     });
 // }
-export default function Home() {
-  return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          src="/logos/Solarah_Logo.jpeg"
-          alt="Solarah Speaks"
-          width={180}
-          height={38}
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li>
-            Subscribe to Solarah Speaks👇🏽
-            <a
-              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              src=""
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a>
-            <a
-              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://blog.solarah.xyz/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                aria-hidden
-                src="/logos/Solarah_Blue.jpeg"
-                alt="Globe icon"
-                width={16}
-                height={16}
-              />
-              Click Link to visit blog.solarah.xyz
-            </a>
-          </li>
 
-          <li>
-            Building The Solarah Foundation: A Decentralized Neurodivergent
-            Community Template for a new earth platform 🌎 Global Initiative
-            Project: SolarahDAO 🌱 nodes for new earth The new earth platform
-            will not be live streamed... it will be channeled ✨🌚🔮
-          </li>
+function Home() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src =
+      'https://cdn.jsdelivr.net/ghost/signup-form@~0.2/umd/signup-form.min.js';
+    script.async = true;
+    script.setAttribute('data-background-color', '#ffffff');
+    script.setAttribute('data-text-color', '#000000');
+    script.setAttribute('data-button-color', '#fac900');
+    script.setAttribute('data-button-text-color', '#000000');
+    script.setAttribute('data-title', 'Solarah Speaks');
+    script.setAttribute(
+      'data-description',
+      'Welcome To The Home Of Solarah Speaks Building The Solarah Foundation: Template for a New Earth Platform'
+    );
+    script.setAttribute(
+      'data-icon',
+      'https://blog.solarah.xyz/content/images/size/w192h192/size/w256h256/2024/10/The-poetry-of-us-lives-in-my-DNA.-Strands-of-nostalgia--double-helixed-and-locked.-Our-eyes-first-met-and-words-finally-took-form.-Memories-of-verses--all-mine--yet-not-my-own.-I-live-now-in-stanz-1.png'
+    );
+    script.setAttribute('data-site', 'https://blog.solarah.xyz/');
+    script.setAttribute('data-locale', 'en');
 
-          <li>
-            If you want to book a session, please choose a service by visiting{' '}
-            <a
-              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              src=""
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a>
-            <a
-              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://blog.solarah.xyz/services/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                aria-hidden
-                src="/logos/Solarah_Blue.jpeg"
-                alt="Globe icon"
-                width={16}
-                height={16}
-              />
-              blog.solarah.xyz/services
-            </a>{' '}
-            👉 then email solarahspeaks@proton.me to confirm before you book a
-            session with the button below 👇🏽{' '}
-          </li>
-        </ol>
+    document.body.appendChild(script);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://pay.solarah.xyz/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book a Session
-          </a>
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://blog.solarah.xyz/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Subscribe now
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://www.paypal.com/paypalme/tanyatarot19"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Support
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://app.cg/c/kR9ybbED7Z/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Join Community
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://www.youtube.com/channel/UCYLsAm9BC45uZ5_lb1YenVw"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          YouTube Channel
-        </a>
+    return () => {
+      document.body.removeChild(script); // Cleanup on component unmount
+    };
+  }, []);
 
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          src=""
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a>
-
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://solarah.info/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/logos/Solarah_Blue.jpeg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Click Logo to view services→ blog.solarah.xyz/services
-        </a>
-      </footer>
-    </div>
-  );
+  return <div style={{ height: '100vh' }}></div>;
 }
+
+export default Home;
