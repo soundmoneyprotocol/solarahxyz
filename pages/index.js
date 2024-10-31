@@ -98,9 +98,12 @@ const geistMono = localFont({
 //       console.error(err);
 //     });
 // }
-
 function Home() {
   useEffect(() => {
+    // Prevent scrolling
+    document.body.style.overflow = 'hidden';
+
+    // Create and configure the signup form script
     const script = document.createElement('script');
     script.src =
       'https://cdn.jsdelivr.net/ghost/signup-form@~0.2/umd/signup-form.min.js';
@@ -121,16 +124,25 @@ function Home() {
     script.setAttribute('data-site', 'https://blog.solarah.xyz/');
     script.setAttribute('data-locale', 'en');
 
-    document.body.appendChild(script);
-    // Add no-scroll class to the body
-    document.body.classList.add('no-scroll');
+    // Append the script to the signup form container
+    const container = document.getElementById('signup-form-container');
+    if (container) {
+      container.appendChild(script);
+    }
+
+    // Cleanup on unmount
     return () => {
-      document.body.removeChild(script); // Cleanup on component unmount
-      document.body.classList.remove('no-scroll'); // Remove no-scroll class
+      // Re-enable scrolling
+      document.body.style.overflow = '';
+
+      // Remove script on unmount
+      if (container) {
+        container.removeChild(script);
+      }
     };
   }, []);
 
-  return <div style={{ height: '100vh' }}></div>;
+  return <div id="signup-form-container" style={{ height: '100vh' }}></div>;
 }
 
 export default Home;
