@@ -122,9 +122,12 @@ function Home() {
     script.setAttribute('data-locale', 'en');
 
     document.body.appendChild(script);
+    // Add no-scroll class to the body
+    document.body.classList.add('no-scroll');
 
     return () => {
       document.body.removeChild(script); // Cleanup on component unmount
+      document.body.classList.remove('no-scroll'); // Remove no-scroll class
     };
   }, []);
 

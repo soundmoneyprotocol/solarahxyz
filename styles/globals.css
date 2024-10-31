@@ -25,3 +25,7 @@ body {
     text-wrap: balance;
   }
 }
+/* Prevent scroll */
+.no-scroll {
+  overflow: hidden;
+}
